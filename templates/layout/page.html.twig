@@ -1,0 +1,297 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.highlighted: Items for the highlighted content region.
+ * - page.help: Dynamic help text, mostly for admin pages.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.footer: Items for the footer region.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<!-- PRE LOADER -->
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
+
+
+<!-- NAVIGATION SECTION -->
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!-- lOGO TEXT HERE -->
+               <a href="{{ path('<front>') }}" class="navbar-brand">Homene.</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a class="smoothScroll" href="#home">Home</a></li>
+                    <li><a class="smoothScroll" href="#about">About Jack Doe</a></li>
+                    <li><a class="smoothScroll" href="#work">My Works</a></li>
+                    <li><a class="smoothScroll" href="#contact">Contact</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- HOME SECTION -->
+<section id="home">
+
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-2 col-sm-3">
+                    <img src="/{{ directory }}/images/profile-image.jpg" class="wow fadeInUp img-responsive img-circle" data-wow-delay="0.2s" alt="about image">
+               </div>
+
+               <div class="col-md-8 col-sm-8">
+                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hey there, Websites that share CMS Drupal knowledge Drupal Tutorial, Drupal Quiz In Thailand.</h1>
+                    <a href="https://www.drupalthai.org" class="wow fadeInUp btn btn-default section-btn" data-wow-delay="1s">Visit Website</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-8 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+                              <h2>A Little Bit Of My Story</h2>
+                              <p><strong>Senior Interactive Designer & Web Developer at yourdreamjob.com</strong></p>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p>Award winning interdisciplinary Designer & Art director. We have a team who specialise in coding websites and themes perfect blend of style and function for a wide range of interactive product design.</p>
+                         </div>
+                         <ul class="social-icon">
+                              <li class="wow fadeInLeft" data-wow-delay="1s"><a href="#" class="fa fa-twitter"></a></li>
+                              <li class="wow fadeInUp" data-wow-delay="1.2s"><a href="#" class="fa fa-linkedin"></a></li>
+                              <li class="wow fadeInRight" data-wow-delay="1.4s"><a href="#" class="fa fa-dribbble"></a></li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-sm-12">
+                    <div class="wow fadeInUp" data-wow-delay="0.4s">
+                         <h2>On Instagram</h2>
+                    </div>
+
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+                         <a href="https://www.instagram.com/p/cqED9yjN0j/">
+                              <img src="/{{ directory }}/images/instagram-image1.jpg" class="img-responsive" alt="instagram image">
+                         </a>
+
+                         <a href="https://www.instagram.com/p/enL0SsDN51/">
+                              <img src="/{{ directory }}/images/instagram-image2.jpg" class="img-responsive" alt="instagram image">
+                         </a>
+
+                         <a href="https://www.instagram.com/p/apOuRTDNwJ/">
+                              <img src="/{{ directory }}/images/instagram-image3.jpg" class="img-responsive" alt="instagram image">
+                         </a>
+
+                         <a href="https://www.instagram.com/p/ZXIj33jN2v/">
+                              <img src="/{{ directory }}/images/instagram-image4.jpg" class="img-responsive" alt="instagram image">
+                         </a>
+
+                         <a href="https://www.instagram.com/p/Xwev1FjN9-/">
+                              <img src="/{{ directory }}/images/instagram-image5.jpg" class="img-responsive" alt="instagram image">
+                         </a>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- SKILL SECTION -->
+<section id="skill">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-4 col-sm-6">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <h2>Expertise</h2>
+                         <p>Award winning interdisciplinary Designer & Art director. We have a team who specialise in coding websites.</p>
+                    </div>
+               </div>
+
+               <div class="col-md-offset-1 col-md-6 col-sm-6">
+                    <div class="skill-thumb">
+
+                         <div class="wow fadeInUp" data-wow-delay="1s">
+                              <strong>Graphic Design</strong>
+                                   <span class="pull-right">95%</span>
+                                        <div class="progress">
+                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        </div>
+                         </div>
+
+                         <div class="wow fadeInUp" data-wow-delay="1.2s">
+                              <strong>Minimal Themes</strong>
+                                   <span class="pull-right">100%</span>
+                                        <div class="progress">
+                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                        </div>
+                         </div>
+
+                         <div class="wow fadeInUp" data-wow-delay="1.4s">
+                              <strong>Media & Photography</strong>
+                                   <span class="pull-right">75%</span>
+                                        <div class="progress">
+                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                        </div>
+                         </div>
+
+                    </div>
+               </div>
+               
+          </div>
+     </div>
+</section>
+
+
+<!-- WORK SECTION -->
+<section id="work">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <h2>Seleted Works</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="/{{ directory }}/images/work-1.jpg" class="image-popup">
+                              <img src="/{{ directory }}/images/work-1.jpg" class="img-responsive" alt="Work">
+                         </a>
+                    </div>
+                    <h4>Graphic & Branding</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.6s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="/{{ directory }}/images/work-2.jpg" class="image-popup">
+                              <img src="/{{ directory }}/images/work-2.jpg" class="img-responsive" alt="Work">
+                         </a>
+                    </div>
+                    <h4>Logo Design</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="/{{ directory }}/images/work-3.jpg" class="image-popup">
+                              <img src="/{{ directory }}/images/work-3.jpg" class="img-responsive" alt="Work">
+                         </a>
+                    </div>
+                    <h4>Photography</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="/{{ directory }}/images/work-4.jpg" class="image-popup">
+                              <img src="/{{ directory }}/images/work-4.jpg" class="img-responsive" alt="Work">
+                         </a>
+                    </div>
+                    <h4>Minimal Themes</h4>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <h2>You got projects?</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
+                    </div>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                     <!-- CONTACT FORM HERE -->
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+                        <form id="contact-form">
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="text" class="form-control" name="name" placeholder="Name">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="email" class="form-control" name="email" placeholder="Email">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="text" class="form-control" name="name" placeholder="Subject">
+                              </div>
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+                              </div>
+                              <div class="col-md-offset-9 col-md-3 col-sm-offset-3 col-sm-6">
+                                   <button id="submit" type="submit" class="form-control" name="submit">Send Message</button>
+                              </div>
+                        </form>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>

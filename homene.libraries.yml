@@ -1,0 +1,19 @@
+global-styling:
+    version: 1.x
+    css:
+      theme:
+        css/bootstrap.min.css: {}
+        css/animate.css: {}
+        css/magnific-popup.css: {}
+        css/font-awesome.min.css: {}
+        css/style.css: {}
+        css/custom.css: {}
+    js:
+      js/bootstrap.min.js: {}
+      js/smoothscroll.js: {}
+      js/jquery.magnific-popup.min.js: {}
+      js/magnific-popup-options.js: {}
+      js/wow.min.js: {}
+      js/custom.js: {}
+    dependencies:
+      - core/jquery
